@@ -1,0 +1,208 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "chat_room",
+            "base": "",
+            "fields": [
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "room_name",
+                    "type": "string"
+                },
+                {
+                    "name": "room_index",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "close",
+            "base": "",
+            "fields": [
+                {
+                    "name": "manager",
+                    "type": "name"
+                },
+                {
+                    "name": "room_index",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "room_name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "exit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "room_index",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "message_list",
+            "base": "",
+            "fields": [
+                {
+                    "name": "message_index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "sender",
+                    "type": "name"
+                },
+                {
+                    "name": "message",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "select",
+            "base": "",
+            "fields": [
+                {
+                    "name": "manager",
+                    "type": "name"
+                },
+                {
+                    "name": "be_selected",
+                    "type": "name"
+                },
+                {
+                    "name": "room_index",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "send",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sender",
+                    "type": "name"
+                },
+                {
+                    "name": "room_index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "message",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "update",
+            "base": "",
+            "fields": [
+                {
+                    "name": "manager",
+                    "type": "name"
+                },
+                {
+                    "name": "room_index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "new_name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "user_list",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "close",
+            "type": "close",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "exit",
+            "type": "exit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "select",
+            "type": "select",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "send",
+            "type": "send",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "update",
+            "type": "update",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "chatrooms",
+            "type": "chat_room",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "messagelists",
+            "type": "message_list",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "userlists",
+            "type": "user_list",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
